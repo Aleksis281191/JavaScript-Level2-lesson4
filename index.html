@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box-text-ex">
+        <span class="text-box__before-text">
+            'Здесь должна быть прямая речь'<br>
+            В конструкциях типа aren't don't isn't doesn't didn't одинарные кавычки сохраняются<br>
+            'Здесь должна быть прямая речь'<br>
+            В конструкциях типа aren't don't isn't doesn't didn't одинарные кавычки сохраняются<br>
+            'Здесь должна быть прямая речь'<br>
+            В конструкциях типа aren't don't isn't doesn't didn't одинарные кавычки сохраняются<br>
+            'Здесь должна быть прямая речь'<br>
+            В конструкциях типа aren't don't isn't doesn't didn't одинарные кавычки сохраняются<br>
+            'Здесь должна быть прямая речь'<br>
+            В конструкциях типа aren't don't isn't doesn't didn't одинарные кавычки сохраняются<br>
+        </span>
+        <br>
+        <button class="btn-change-text" onclick="changeText()"> Изменить ' на " </button>
+        <br>
+        <span class="text-box__after-text"></span>  
+    </div>
+    <div class="form-box" >       		 
+        <form name="regform" onsubmit="return formValidation(event)">
+        <h2 id="form-box__area__headline"></h2>
+            <p >Имя: 
+                <input type="text" size=50 name="name" class="form-box__area"></p><br>
+                <span class="error-text form-box__area"></span>	 
+            <p>E-mail: 
+                <input type="text" size=50 name="email" class="form-box__area"> </p><br> 
+                <span class="error-text form-box__area"></span>	
+            <p>Телефон: 
+                <input type="text" size=50 name="telephone" onclick="this.value=''" value="+7(000)000-0000" class="form-box__area"> </p><br>
+                <span class="error-text form-box__area"></span>	
+            <p> Комментарий: 
+                <textarea cols="50" name="comment" class="form-box__area"> </textarea></p> 
+            <p>
+                <input type="submit" value="Отправить" name="submitButton">                
+            </p>		 
+        </form>        
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
